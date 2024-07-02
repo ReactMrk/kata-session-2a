@@ -1,9 +1,8 @@
-const ClientList = () => {
+const ClientList = ({ client }) => {
   return(
     <ul className="client-list">
       {
-        Object.keys(localStorage).map(key => {
-          const client = JSON.parse(localStorage[key]);
+        client.map(client => {
           return (
             <li key={client.email}>
               <strong>{client.name}</strong><br />

@@ -1,12 +1,22 @@
 import { useState } from 'react';
 
-const ClientForm = () => {
+const ClientForm = ({ setClient }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
   const submitEmployee = () => {
-    localStorage.setItem(email, JSON.stringify({name, email, phone, address}));
+    setClient((prevClient => {
+     return [
+        ...prevClient,
+        {
+          name,
+          email,
+          phone,
+          address
+        }
+      ]
+    }));
   };
   return (
     <div className="form">

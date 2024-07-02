@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import ClientForm from "./ClientForm";
 import ClientList from "./ClientList";
 
 const ClientManagement = () => {
+  const [client, setClient] = useState([]);
   return (
     <>
-      <ClientForm />
-      <ClientList />
+      <ClientForm setClient={setClient}/>
+      <ClientList client={client}/>
     </>
   )
 };
