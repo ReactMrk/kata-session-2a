@@ -14,7 +14,7 @@ Run app: **npm run dev**
 
 **Info:** it's not a problem that clients are lost when website is reloaded because in a future an API will be used to get them.
 
-**Exercise 1.**
+**Exercise 1.** 30min
 
 After some time on production, a new requirement has been requested. When agent adds a new client and the list of clients is large, there is no feedback, so agents are not sure if the client has been added correclty until they scroll down the entire list.
 
@@ -24,13 +24,13 @@ To do this improvement, principal engineer suggested you to create a component u
 
 **Extra:** principal engineer saids that this hook maybe needed for other components. Once this effect is working, could you refactor it to be a custom hook?
 
-**Exercise 2.**
+**Exercise 2.** 1h
 
 Client Management System is mind to be a large application, so in a future new react compoments related with clients will be added. Variables client and setClient will be the parameters for these new react components. In order to avoid these variables being passed again and again from parent to children, principal engineer suggested you to create a context.
 
 **To create the context, modify src/ClientContext.js file**
 
-**Exercise 3.**
+**Exercise 3.** 1h 30min
 
 Once a client is added to the list, the fields are not cleaned. The principal engineer tells you to fix the issue using useReduce, in order to avoid a set of functions, that modify the state, being triggered in a row.
 
