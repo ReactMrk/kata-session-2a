@@ -10,21 +10,25 @@ Install dependencies: **npm install**
 
 Run app: **npm run dev**
 
-**Tips:** take a look at App.css file, the styles needed for these exercises are already done.
+**Tips:** commented code is the skeleton to complete the exercises.
 
-**Info:** it's not a problem that clients are lost when wesite is reloaded because in a future an API will be used to get them.
+**Info:** it's not a problem that clients are lost when website is reloaded because in a future an API will be used to get them.
 
 **Exercise 1.**
 
 After some time on production, a new requirement has been requested. When agent adds a new client and the list of clients is large, there is no feedback, so agents are not sure if the client has been added correclty until they scroll down the entire list.
 
-To do this improvement, principal engineer suggested you to create a new component with a use effect that displays an alert on the top of the list when a new client is added. The alert should be displayed for 2 seconds.
+To do this improvement, principal engineer suggested you to create a component using useEffect that displays an alert on the top of the list when a new client is added. The alert should be displayed for 2 seconds.
+
+**Modify src/Alert.jsx file**
 
 **Extra:** principal engineer saids that this hook maybe needed for other components. Once this effect is working, could you refactor it to be a custom hook?
 
 **Exercise 2.**
 
-Client Management System is mind to be a large application, so in a future new react compoments related with client will be added. Variables client and setClient will be the parameters for these new react components. In order to avoid these variables being passed again and again from parent to children, principal engineer suggested you to create a context.
+Client Management System is mind to be a large application, so in a future new react compoments related with clients will be added. Variables client and setClient will be the parameters for these new react components. In order to avoid these variables being passed again and again from parent to children, principal engineer suggested you to create a context.
+
+**To create the context, modify src/ClientContext.js file**
 
 **Exercise 3.**
 
@@ -36,5 +40,7 @@ setEmail(''); <br />
 setPhone(''); <br />
 setAddress(''); <br />**
 
-Could you also create a clear button?
+When state updates are frequent and/or complex, useReducer provides better performance through its centralized update logic, avoiding unnecessary re-renders and excessive state management code.
+
+**Could you also create a clear button?**
 
