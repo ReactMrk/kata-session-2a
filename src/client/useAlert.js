@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 
 const useAlert = ({ clients }) => {
   const [displayAlert, setDisplayAlert] = useState(false);
